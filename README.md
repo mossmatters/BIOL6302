@@ -1,11 +1,12 @@
 # BIOL6304: Principles of Phylogenetics 
--
+---
 
 Fall 2020 • TuTh 3:30 - 4:50 PM • Location: **Online (Blackboard)**
 
 Instructor: Dr. Matthew Johnson, matt.johnson@ttu.edu, 806-834-5750
 
--
+---
+
 Textbook: [*Tree Thinking* by Baum and Smith](https://www.amazon.com/David-Baum/dp/1936221160/)
 
 Website: [github.com/mossmatters/BIOL6304]()
@@ -16,7 +17,7 @@ Students are expected to have access to a computer for in-class exercises each w
 
 Readings and Thursday exercises will be posted on Blackboard.
 
-##Expected Learning Outcomes
+## Expected Learning Outcomes
 After completion of this graduate level course, students will be able to:
 
 - Correctly use phylogenetic trees to interpret patterns of common descent and trait evolution.
@@ -80,7 +81,7 @@ Student learning outcomes will be assessed via:
 
 All grades posted at the end of the course will be final, except for calculation errors!
 
-##COVID Contingency Statement
+## COVID Contingency Statement
 ### Illness-Based Absence Policy
 If at any time during this semester you feel ill, in the interest of your own health and safety as well as the health and safety of your instructors and classmates, you are encouraged not to attend face-to-face class meetings or events.  Please review the steps outlined below that you should follow to ensure your absence for illness will be excused.  These steps also apply to not participating in synchronous online class meetings if you feel too ill to do so and missing specified assignment due dates in asynchronous online classes because of illness.If you are ill and think the symptoms might be COVID-19-related:
 
