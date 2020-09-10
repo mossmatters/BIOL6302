@@ -1,0 +1,29 @@
+#NEXUS
+
+begin data;
+dimensions ntax=10 nchar=16;
+format datatype=standard symbols="0 1 2";
+
+
+MATRIX
+Anolis_outgroupus				0000000000000000
+Anolis_acutus                   0021021121101101
+Anolis_aeneus                   0000011111102101
+Anolis_agassizi                 0000011111102101
+Anolis_bahorucoensis            0121011121121111
+Anolis_barahonae                1021022121121101
+Anolis_bartschi                 1021012121101111
+Anolis_bimaculatus              1021012121101100
+Anolis_carolinensis             2021012111101110
+Anolis_cuvieri                  2021022111101102
+;
+END;
+
+begin assumptions;
+
+usertype my_ctype stepmatrix=3
+ 0 1 2
+[0] . 1 1
+[1] 2 . 2
+[2] 1 1 .
+;end;
