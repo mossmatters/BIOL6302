@@ -17,7 +17,7 @@ As we learned in lecture, inferring a phylogeny for more than a few taxa is a co
 ## Constructing a NEXUS file
 One standard file format is the NEXUS file, which is a plain text file that can contain both phy- logenetic data (i.e. the character matrix and/or tree) and instructions for conducting analyses. A NEXUS file is split into blocks containing data or instructions. By convention, the NEXUS file usually ends with the extension `.nex` or `.nexus`.
 
-For this lession we will use some categorical data from *Anolis* which can be downloaded from this link.
+For this lession we will use some categorical data from *Anolis* which can be downloaded [from this link](https://github.com/mossmatters/BIOL6304/blob/master/Week3_Parsimony/anolis.nex). Either save the file or copy-paste it into a text editor. 
 
 **NOTE**: You should only edit a NEXUS file with a plain text editor such as Notepad++ or BBEdit, or with a command-line editor such as vim or nano. This goes for most files in bioinformatics; using word processors including Microsoft Word and regular Notepad can result in files that are unreadable by phylogenetics software, even if you “save as” a text file. The NEXUS file can also be edited directly within PAUP (GUI Version), as we will see in the next section.
 
@@ -119,7 +119,8 @@ The first step is to Execute the file. This command can also be found in the Fil
 When your file is successfully loaded, you will see output that looks something like this:
 
 ```
-Processing of file "anolis.nex" begins...Data matrix has 10 taxa, 16 characters 
+Processing of file "anolis.nex" begins...
+Data matrix has 10 taxa, 16 characters 
 Valid character -state symbols: 012 Missing data identified by ’?’
 Processing of input file "anolis.nex" completed.
 ```
@@ -333,16 +334,19 @@ PAUP stores trees in memory until they are overwritten. To save one or more of t
 PAUP will save the trees in a NEXUS file that has a trees block, which will look something like this:
 
 ```
-#NEXUSBegin trees; Translate
+#NEXUS
+Begin trees; Translate
 1 Anolis_outgroupus ,
 2 Anolis_acutus ,
 3 Anolis_aeneus ,
-4 Anolis_agassizi ,5 Anolis_bahorucoensis ,
+4 Anolis_agassizi ,
+5 Anolis_bahorucoensis ,
 6 Anolis_barahonae ,
 7 Anolis_bartschi ,
 8 Anolis_bimaculatus ,
 9 Anolis_carolinensis ,
-10 Anolis_cuvieri;
+10 Anolis_cuvieri
+;
 tree ’PAUP_1’ = [&U] (1,(2,5,(6,7,(8,(9,10)))),3,4);
 tree ’PAUP_2’ = [&U] (1,(2,(5,(6,(7,(8,(9,10)))))),3,4);
 ```
@@ -412,7 +416,8 @@ begin assumptions;
 usertype my_ctype stepmatrix=4
 ACGT 
 [A] . 2 1 2 
-[C] 2 . 2 1[G] 1 2 . 2 
+[C] 2 . 2 1
+[G] 1 2 . 2 
 [T] 2 1 2 . ;
 end;
 ```
