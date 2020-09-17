@@ -156,7 +156,7 @@ All of the above models share the assumption that every site in the DNA matrix e
 
 To incorporate this variability, each site can have its rate chosen from a distribution of possible rates. The most frequently used distribution is _inverse gamma_ and the shape of the distribution is set by a parameter called *alpha*. This alpha parameter can be inferred from the data, and then each site is assigned to a portion of the resulting distribution. 
 
-[](img/Gamma_distribution.png)
+[!](img/Gamma_distribution.png)
 
 When the value of alpha is low, most sites will have a low substitution rate, while only a few sites will have fast rates. To reduce computational load, the distribution is broken into bins (traditionally, 4 bins, although more recently 20 bins is also common). Each site is assigned to a bin on the distribution.
 
