@@ -101,7 +101,7 @@ Open the NT file in Aliview. Do you notice any differences between this alignmen
 
 ## Inferring Molecular Phylogenies in PAUP
 
-Now that you have constructed molecular sequence alignments, it is time to infer phylogenies from those alignments. Each alignment needs to be converted to the NEXUS format to be used in PAUP. This can be done within AliView in the File menu. For the MAFFT alignments, use the `Save as Nexus` option, but use the `Save as NEXUS codonpos` for the MACSE alignment. Open one of the alignments in PAUP and execute the file (Ctrl-R in the graphical version).
+Now that you have constructed molecular sequence alignments, it is time to infer phylogenies from those alignments. Each alignment needs to be converted to the NEXUS format to be used in PAUP. This can be done within AliView in the File menu. For the MAFFT alignments, use the `Save as Nexus (Illegal characters replaced)` option. PAUP and other phylogenetic software often will treat `-` and `_` as special characters, so they will raise an error if they are contained in the sequence names. For the MACSE alignment, use the `Save as NEXUS codonpos` for the MACSE alignment. Open one of the alignments in PAUP and execute the file (Ctrl-R in the graphical version).
 
 ### Determining the best molecular model
 
