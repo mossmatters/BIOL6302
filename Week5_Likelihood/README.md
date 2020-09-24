@@ -2,12 +2,26 @@
 BIOL6304: Principles and Practice of Phylogenetics
 
 ## Learning Objectives
-- After completing this activity, students will be able to:
-- Retrieve DNA sequence data from an online database.
-Infer a multiple-sequence alignment.
-Compare models of molecular evolution on a DNA character matrix. Infer a phylogeny using the maximum likelihood critereon.https://www.ncbi.nlm.nih.gov/nuccore/ 
 
-In the search bar, enter the sequence `KR081510.1`. Take some time to read through the information presented. What is the name of the gene that was sequenced? Is the whole gene sequenced, or only part of the gene? What kind of sequencing tech- nology was used?
+After completing this activity, students will be able to:
+- Retrieve DNA sequence data from an online database.
+- Infer a multiple-sequence alignment.
+Compare models of molecular evolution on a DNA character matrix. 
+- Infer a phylogeny using the maximum likelihood critereon.
+
+## Software 
+
+Install Aliview from here:  https://ormbunkar.se/aliview/
+
+## Introduction
+Over the last few lectures, we have learned the process of inferring phylogenies from molecular sequence data. One main advantage of molecular sequence data is the ability to model evolution, based on observed patterns of substitution in DNA or protein sequences. Molecular character ma- trices are often much larger than morphological matrices, allowing for better measures of phylogeny support.
+Constructing a molecular character matrix means acquiring sequence data in some way, either through traditional Sanger sequencing of individual loci, whole genome or transcriptome sequence, or one of the reduced representation methods such as target capture or amplicon sequencing. Unfor- tunately the budget for this course is a bit low, so we will be using another common way to acquire sequence data: mining large databases for other people’s sequences.
+
+## Searching for Sequences in GenBank
+
+The National Center for Biotechnology Information (NCBI) is maintained by the National Institute of Health (NIH) for the purpose of handling computerized versions of biological data. One repository, GenBank, is a database of biological sequence data, compiled by researchers who submit sequences to the database. Since the mid-2000s, many journals require that sequence information associated with peer-reviewed articles be deposited in databases like GenBank as a condition of publication. As of 2018, GenBank contains over 200 million sequences consisting of over 200 billion nucleotide bases. Each sequence is a database record that includes metadata about the sequence, including organism identity, origin, and publications associated with the sequence.
+
+Go to: https://www.ncbi.nlm.nih.gov/nuccore/ In the search bar, enter the sequence `KR081510.1`. Take some time to read through the information presented. What is the name of the gene that was sequenced? Is the whole gene sequenced, or only part of the gene? What kind of sequencing tech- nology was used?
 
 At the top of the screen underneath the sequence name and GenBank accession number, there is a link labeled `FASTA`. Click this link to view the full sequence in a common format. The FASTA format is relatively simple: the first line is the sequence identifier (ID), and always starts with `>`. All lines that follow the sequence identifier are interpreted as sequence information, until the next line that starts with `>`. This way, the FASTA format can hold multiple sequences, and the sequence information can be on multiple lines to improve readability.
 
