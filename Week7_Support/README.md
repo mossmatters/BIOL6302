@@ -84,14 +84,13 @@ As you saw above, it is possible to get different answers from the three main te
 
 Instead, a much more rigorous application of the tree hypothesis tests is to test for topological constraint. First, a tree is inferred without constraint on its topology (a normal maximum likelihood search). Another search is then conducted with some constraints – for example, one clade may be forced to be monophyletic. The two trees are then compared using the KH, SH, and AU tests.
 
-For this exercise, we will constrain the `primates.nex` inference to force humans and gorillas to be monophyletic. Reload and execute the file in PAUP to clear all analysis. 
+For this exercise, we will constrain the primate inference to force humans and gorillas to be monophyletic. Execute the `primates_constraint.nex` file and  clear all previous analysis. The `primates_constraint.nex` file contains an extra block that defines a Newick-style tree with the constraint: `Homo_sapiens` and `Gorilla` on one side, everything else on the other side. 
 
-**COMMAND LINE VERSION** `execute primates.nex` (Enter `Y` when it prompts)
+**COMMAND LINE VERSION** `execute primates_constraint.nex` (Enter `Y` when it prompts)
 
-The constraint tree is located on GitHub under `constraint.tre`. Select Load Constraints in the Analysis menu and select the constraint.tre Repeat the maximum likelihood heuristic search, but be sure to select the constraints in the first tab.
+Repeat the maximum likelihood heuristic search, but be sure to select the `humangorilla` constraints in the first tab.
 
-**COMMAND LINE VERSION** Load the constraint tree: `loadconstr file=constraint.tre`
-Conduct a likelihood search with the constraint: 
+**COMMAND LINE VERSION** Conduct a likelihood search with the constraint: 
 
 `hsearch addseq=random nreps=100 nbest=no enforce=yes`
 
@@ -112,5 +111,6 @@ Repeat this analysis with a different constraint to test by editing the constrai
 
 `((Tarsius_syrichta,Lemur_catta,Pan,Pongo,Hylobates,Macaca_fuscata,M_mulatta,M_fascicularis,M_sylvanus,Saimiri_sciureus,Homo_sapiens,Gorilla),(Pan,Lemur_catta));`
 
+This can be added to the `paup` block using a text editor. Use the existing `humangorilla` constraint tree as a guide. 
 
 
