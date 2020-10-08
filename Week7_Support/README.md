@@ -109,7 +109,7 @@ Then, conduct the KH, SH, and AU tests as above.
 
 Repeat this analysis with a different constraint to test by editing the constraint.tre file. The constraint is indicated by the two sets of parentheses. You may move taxa around to make a test. For example, to constrain the tree to force chimpanzees and lemurs to be monophyletic:
 
-`((Tarsius_syrichta,Lemur_catta,Pan,Pongo,Hylobates,Macaca_fuscata,M_mulatta,M_fascicularis,M_sylvanus,Saimiri_sciureus,Homo_sapiens,Gorilla),(Pan,Lemur_catta));`
+`((Tarsius_syrichta,Pongo,Hylobates,Macaca_fuscata,M_mulatta,M_fascicularis,M_sylvanus,Saimiri_sciureus,Homo_sapiens,Gorilla),(Pan,Lemur_catta));`
 
 This can be added to the `paup` block using a text editor. Use the existing `humangorilla` constraint tree as a guide. 
 
