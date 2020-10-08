@@ -1,6 +1,6 @@
 # Tree Support and Hypothesis Testing
 
-** BIOL 6304: Principles and Practice of Phylogenetics **
+**BIOL 6304: Principles and Practice of Phylogenetics**
 
 ## Learning Objectives
 
