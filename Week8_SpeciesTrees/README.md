@@ -3,14 +3,23 @@
 
 ## Learning Objectives
 
+After completing this lesson, students will be able to:
+
+1. Conduct a phylogenetic inference in BEAST using the multispecies-coalescent.
+2. Use SVDQuartets to infer a phylogeny from a charater matrix in a method consistent under deep coalescence.
+3. Compare parameterized and summary species tree methods to standard concatenation.
+
+
 ## Programs
 
-* PAUP:
-* BEAST2:
+* [PAUP](http://phylosolutions.com/paup-test/)
+* [BEAST2](http://www.beast2.org/):
+* [Tracer](https://github.com/beast-dev/tracer/releases)
+* [FigTree](https://github.com/rambaut/figtree/releases)
 
 ## Bayesian inference of species trees
 
-Follow the the tutorial here to run BEAST in *BEAST (pronounced "star-beast") mode. BEAST will jointly infer gene trees and species trees. The nexus files needed to run the tutorial can also be found in the BEAST2 folder.
+[Follow the the tutorial here](https://taming-the-beast.org/tutorials/StarBeast-Tutorial/) to run BEAST in *BEAST (pronounced "star-beast") mode. BEAST will jointly infer gene trees and species trees. The nexus files needed to run the tutorial can also be found in the BEAST2 folder.
 
 When you are finished with the tutorial, compare your tree to `standard.tre` found in the files folder of the GitHub repository. This tree was inferred with the same matrix and substitution model, but with standard methods. The phylogeny is inferred with all genes assumed to share one history, as in the "concatenation" method. 
 
