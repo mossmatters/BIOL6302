@@ -47,7 +47,7 @@ In Mesquite, return to the tree window. In the Display menu, select Tree Form, a
 
 Repeat the process of tracing character states on the tree:
 
-1. Select "Trace Character Over Trees" in the Analysis:Trees menu.
+1. Select "Trace Character History" in the Analysis:Trees menu.
 2. Select "Likelihood Ancestral States"
 3. Select "Stored Probability Model"
 4. Select "Mk1 (est)." This is the all-rates-equal model.
