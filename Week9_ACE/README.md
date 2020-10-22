@@ -35,7 +35,7 @@ Select a character and then at the top of the list, click "Parsimony Model" and 
 One of the advantages of the likelihood reconstruction method is that models of character evolution can be evaluated in a hypothesis testing framework. The rate of change from one character state to another is referred to as the Q-matrix or transition matrix. A common use of likelihood is to test different models of the Q-matrix, for example:
 
 * All-rates-Equal: for a binary character, the rate from 0 -> 1 is the same as the rate from 1 -> 0
-* Asymmetric Rates: for a binary character, the rate from 0 -> 1 is the same as the rate from 1 -> 0
+* Asymmetric Rates: for a binary character, the rate from 0 -> 1 is allowed to have a different rate than changes from 1 -> 0
 
 Since the all-rates-equal method is a simplified version of the asymmetric rates model, they can be directly compared using a Likelihood Ratio Test.
 
