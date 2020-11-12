@@ -1,0 +1,6 @@
+"spA" "spB" "spC" "spD" "spE" "spF" "spG" "spH" "spI" "spJ" "spK" "spL" "spM" "spN" "spO"
+"com1" 1 0 1 0 1 0 1 0 0 0 0 0 1 1 1
+"com2" 0 1 0 1 1 0 1 0 0 1 1 0 0 0 0
+"com3" 1 0 1 0 0 1 1 1 0 0 0 0 0 1 0
+"com4" 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0
+"com5" 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0
