@@ -238,7 +238,7 @@ com.1.abund = my.sample[1,my.sample[1, ] > 0]
 length(com.1.abund)
 ```
 
-To get the PD of this community, the phylogeny must be reduced to have only the taxa in the community, which we can do using the column names of the community-specific vector and the . 
+To get the PD of this community, the phylogeny must be reduced to have only the taxa in the community, which we can do using the column names of the community-specific vector and the tree. 
 
 ```
 com.1.phylo = keep.tip(my.phylo,colnames(com.1.abund))
