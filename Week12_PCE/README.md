@@ -453,7 +453,7 @@ random.phylo = replicate(100,tipShuffle(null.phylo),simplify=F)
 random.phylo.pd = lapply(random.phylo,pd,samp=null.sample)
 com.1.phylo.pd = as.numeric(lapply(random.phylo.pd,function(x) x[1,1]))
 stripchart(com.1.phylo.pd,method='stack')
-abline(v=observed.pd[1,1],col='red')
+abline(v=pd.observed[1,1],col='red')
 ```
 
 The visualization is interesting, but to actually calculate a p-value, we need to identify the rank of the observed value among the estimates from the null distribution. This rank divided by the number of replicates is the P-value for the randomization:
