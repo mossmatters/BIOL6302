@@ -242,7 +242,7 @@ To get the PD of this community, the phylogeny must be reduced to have only the 
 
 ```
 com.1.phylo = keep.tip(my.phylo,colnames(com.1.abund))
-plot(com1.phylo)
+plot(com.1.phylo)
 ```
 
 **NOTE**: for older versions of `ape`, the `keep.tip()` function is not available. Instead, you must first determine the species to drop by comparing the vector to the tip labels of the phylogeny, and then use `drop.tip()`:
@@ -258,6 +258,9 @@ Faith's Phylogenetic Diversity can be calculated using the pruned phylogenetic t
 ```
 sum(com.1.phylo$edge.length)
 ```
+
+
+
 
 ### Creating a Function
 
@@ -276,6 +279,8 @@ The function takes a single vector `x`, which is a row from the community matrix
 ```
 apply(my.sample,MARGIN=1,faith.pd)
 ```
+
+How does the phylogenetic diversity compare with the raw species diversity you calculated with `rowSums(pa.matrix)`?
 
 ### Visualizing Abundance Data
 
@@ -351,7 +356,7 @@ We can put this together into a function as before:
 
 ```
 my.mntd = function(x){
-	com.names = names(x[x>0)
+	com.names = names(x[x>0])
 	my.com.dist = dist.mat[com.names,com.names]
 	diag(my.com.dist) = NA
 	mean(apply(my.com.dist,MARGIN=1,min,na.rm=T))
@@ -377,60 +382,6 @@ mntd(my.sample,dist.mat,abundance.weighted=T)
 ```
 
 Does using species abundances change the ranking of diversity of the five communities?
-
-
-## Phylogenetic Beta Diversity
-
-In ecology, three measures of community diversity are often defined:
-
-- Alpha diversity: The species richness of a community
-- Gamma diversity: The total species richness in a landscape
-- Beta diversity: The proportion of species richness that comes from differences among communities.
-
-We have already seen the effect of using phylognetic diversity on calculating alpha diversity; here we will explore the relationships among communties while incorporating phylogenetic information.
-
-### UniFrac
-
-The UniFrac metric compares two communities by computing the fraction of the phylogeny that is unique to each community and comparing this to the fraction that is shared by the two communities. It therefore requires calculating three values of Faith's PD:
-
-- The PD of species in community A but not community B
-- The PD of species in community B but not community A
-- The PD of species in both community A and community B
-
-The data we will use for this section is in two files: `beta.example.sample.txt` and `beta.example.phylo.txt`. Read in these files:
-
-```
-beta.sample = read.table("beta.example.sample.txt",sep="\t",row.names=1,header=T)
-beta.phylo = read.tree("beta.example.phylo.txt")
-```
-
-Next, use the `unifrac()` function in the `picante` package:
-
-```
-unifrac(beta.sample,beta.phylo)
-```
-
-This returns a unifrac distance matrix comparing all communities. One way to visualize this is with a heirarchical distance tree:
-
-```
-plot(hclust(unifrac(beta.sample,beta.phylo))
-```
-
-As with the alpha diversity metrics above, we can also use abundances to return a weighted version of the UniFrac metric. One method is the `GUniFrac()` function in the `GUniFrac` package.
-
-```
-library(GUnifrac)
-GUniFrac(beta.sample,beta.phylo)
-```
-The function returns several distance matrices, which are calculating using different values of `alpha`, which represents how much to weight the abundances when calculating `UniFrac`. To plot the distance matrix as before, using the weighted UniFrac (You can also plot the versions that have different values of alpha using `d_0.5` or `d_0` in place of `d_1`.):
-
-```
-my.gunifrac = GUniFrac(beta.sample,beta.phylo)
-weighted.unifrac = as.dist(my.gunifrac$unifracs[,,"d_1"])
-plot(hclust(weighted.unifrac)
-```
-
-Do the communties change relationships when accounting for abudances?
 
 ## Null Models
 
