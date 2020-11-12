@@ -423,7 +423,7 @@ psv.null = lapply(null.reps,psv,tree=null.phylo)
 Let's compare the phylogenetic diversity of the first community to the distributed generated via randomization. We use a function defined within `lapply()` to indicate we want to retrieve the `pd` value (first column) for the first community (first row). This is specified by `[1,1]`. 
 
 ```
-com.1.pd.null = as.numeric(lapply(pd.null,function(x) x[1,1])
+com.1.pd.null = as.numeric(lapply(pd.null,function(x) x[1,1]))
 stripchart(com.1.pd.null,method='stack')
 abline(v=pd(null.sample,null.phylo)[1,1],col='red')
 ```
