@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{soul}
+\usepackage{hyphenat}
+\usepackage{titlesec}
+\usepackage{lscape}
+\usepackage{geometry}
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.5em}
+\usepackage{graphicx}
+\usepackage{listings}			%For formatted code blocks.
+\usepackage[usenames]{xcolor}
+\definecolor{medium-gray}{gray}{0.75}
+
+\newcounter{terminal}
+\lstnewenvironment{Terminal}[1][]{
+	\renewcommand\lstlistingname{Terminal}
+	\setcounter{lstlisting}{\value{terminal}}
+	\lstset{
+		basicstyle=\footnotesize\ttfamily,		%Small text with a monospaced font
+		aboveskip=4pt,
+		belowskip=4pt,
+		language=bash,
+		backgroundcolor=\color{medium-gray},
+		showlines=true,
+		showstringspaces=false,
+		%literate={\$}{{{\$}}}1,		%Allow dollar signs to still be printed within code blocks.
+		escapechar=!
+		#1
+%		escapeinside={(*@}{@*)}
+		}
+	}{\addtocounter{terminal}{1}}	
+
+
+\textwidth=7in
+\textheight=9.5in
+\topmargin=-1in
+\headheight=0in
+\headsep=.5in
+\hoffset  -.85in
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\frenchspacing
+
+\title{Phylogeny of Caminalcules\\ \large BIOL6304: Principles and Practice of Phylogenetics \\ Short Paper Assignment }
+
+\begin{document}
+\maketitle
+
+\section{Learning Objectives}
+
+After completing this activity, students will be able to:
+
+\begin{enumerate}
+\item Construct a character matrix of morphological characters.
+\item Infer a phylogeny using maximum parsimony.
+\item Interpret phylogenies using the principles of tree thinking.
+\item Write a systematics report based on a phylogenetic inference.
+\end{enumerate}
+
+\section{Introduction}
+
+Over the last two weeks, you have been working with the Caminalcules, and should have generated:
+\begin{itemize}
+\item A matrix of morphological characters.
+\item A phylogeny inferred using maximum parsimony.
+\item Reconstructed character states for one or more characters.
+\end{itemize}
+
+In this assignment, you are tasked with writing a systematics report of the Caminalcules based on these data. 
+The purpose of the assignment is for students to demonstrate an understanding of tree thinking and the 
+You will also perform a phylogenetic comparison between two methods of inferring phylogenies.
+Exactly what you decide to compare is up to you.
+
+Note that if the phylogeny you inferred with your character matrix is completely unresolved, it will not be appropriate for this paper. 
+You may add to or replace characters as needed, but a somewhat resolved phylogeny is required for the paper.
+
+\section{What to turn in}
+
+The full paper should be 3-5 pages long (not including figures/tables).
+You should also turn in one or more NEXUS file(s) containing your character matrix and your phylogenetic trees.
+
+Please turn in all of these files on Blackboard by \textbf{Midnight on October 1, 2020}.
+
+\section{Sections of the Short Paper}
+
+\paragraph{Introduction}
+Introduce the Caminalcules and the rationale behind the study. 
+Perhaps you are interested in the evolution of a particular character, or you have chosen to compare two weighting schemes.
+Explain in the text what your comparison might mean for the evolution of the Caminalcules: what do you expect to find?
+
+\paragraph{Materials and Methods}
+Fully explain your choice of characters and character states for the Caminalcules (a table may be appropriate).
+In a few paragraphs, explain your procedure for inferring the phylogenetic tree of the Caminalcules.
+Which programs did you use? 
+What parameter settings did you choose, and why?
+How are you evaluating support for your phylogeny?
+The goal with any methods section is for someone to take your NEXUS file and instructions and completely recreate your study.
+
+\textbf{You must choose some kind of comparison to do within your paper}, which can focus on either phylogenetic methods or the character matrix itself.
+Describe the comparison you are making and all of the instructions needed to repeat the comparison.
+
+
+\paragraph{Results and Discussion}
+Present the results of the phylogenetic inference as both a figure and in the text.
+Using the tree terminology and tree-thinking methods we have discussed in class, describe the evolution of the Caminalcules.
+How are the groups related, and what does that mean for character evolution?
+Present the results of your character state evolution analysis, using the terminology you learned in class.
+
+This section should also include at least one figure.
+This will likely be your phylogenetic tree, but the design of the figure is up to you. 
+For example, it may be a cladogram or phylogram, and may include reconstructed character states.
+
+\paragraph{Works Cited}
+Be sure to cite all programs used in your analysis. 
+You should also cite the original Caminalcules papers.
+Additional citations should be added as appropriate. 
+Any citation style will be fine as long as it is consistent throughout the paper.
+
+
+\section{Grading Rubric}
+
+10\% : Explanation of methods\\
+10\% : Explanation of an appropriate comparison\\
+5\% : Clarity of writing\\
+30\% : Use of ``tree thinking'' language\\
+20\% : Accurate interpretation of phylogeny\\
+20\% : Accurate interpretation of character evolution\\
+5\% : Works cited and in-text citations\\
+
+
+
+\end{document}

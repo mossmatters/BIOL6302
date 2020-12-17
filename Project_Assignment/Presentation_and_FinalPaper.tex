@@ -1,0 +1,167 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{soul}
+\usepackage{hyphenat}
+\usepackage{titlesec}
+\usepackage{lscape}
+\usepackage{geometry}
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.5em}
+\usepackage{graphicx}
+\usepackage{listings}			%For formatted code blocks.
+\usepackage[usenames]{xcolor}
+\definecolor{medium-gray}{gray}{0.75}
+
+\newcounter{terminal}
+\lstnewenvironment{Terminal}[1][]{
+	\renewcommand\lstlistingname{Terminal}
+	\setcounter{lstlisting}{\value{terminal}}
+	\lstset{
+		basicstyle=\footnotesize\ttfamily,		%Small text with a monospaced font
+		aboveskip=4pt,
+		belowskip=4pt,
+		language=bash,
+		backgroundcolor=\color{medium-gray},
+		showlines=true,
+		showstringspaces=false,
+		%literate={\$}{{{\$}}}1,		%Allow dollar signs to still be printed within code blocks.
+		escapechar=!
+		#1
+%		escapeinside={(*@}{@*)}
+		}
+	}{\addtocounter{terminal}{1}}	
+
+
+\textwidth=7in
+\textheight=9.5in
+\topmargin=-1in
+\headheight=0in
+\headsep=.5in
+\hoffset  -.85in
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\frenchspacing
+
+\title{Phylogenetics Project and Presentation\\ \large BIOL6304: Principles and Practice of Phylogenetics }
+
+\begin{document}
+\maketitle
+
+\section{Learning Objectives}
+
+After completing this activity, students will be able to:
+
+\begin{itemize}
+\item Conduct original research in phylogenetics.
+\item Demonstrate understanding of tree thinking through an 8-10 minute presentation.
+\item Provide constructive feedback to peers on their phylogenetics projects.
+\item Write an original manuscript on phylogenetics in the style of a scientific publication.
+\end{itemize}
+
+\section{Introduction}
+
+The purpose of the final paper is to give students experience conducting, evaluating, and writing original research in phylogenetics.
+The paper should have the format and level of detail expected from a peer-reviewed publication.
+Papers should be at least 10 pages long including figures, tables, and works cited.
+
+You will record a 10 minute presentation and submit it on Blackboard for your peers to view.
+Each presenter will be assigned three peer-reviewers to assess their presentation and provide feedback.
+This feedback should be used to make improvements before submitting your final paper.
+
+
+\section{Assignment Summary}
+
+Presentations are due by the beginning of the scheduled class period on \textbf{Tuesday, December 1}.
+Presentations may be recorded in Powerpoint or using other recording software (Zoom, OBS, etc).
+
+Project papers will be due one week later on \textbf{Tuesday, December 12 by the end of the day (midnight)}, and may be submitted via Blackboard.
+You should turn in your manuscript as a single file-- a Word or PDF document containing the text and figures, or a manuscript with figures separately as part of a single compressed ZIP archive.
+
+
+\section{Presentation}
+
+The purpose of the presentation is to practice sharing of research ideas and results to peers, a major aspect of academic research.
+Prepare your presentation as if you were presenting at an academic conference. 
+Your presentation should include background information and rationale for the research you conducted.
+It should detail the methods used to address the research questions, and appropriate interpretation of results.
+Your presentation should conclude with suggestions for improved or future research.
+
+Your grade will also be based on appropriate constructive feedback provided to the other students. 
+You will not be graded on the feedback from other students, but you should incorporate constructive criticisms when preparing your final paper. 
+Instead, your grade in this portion (30\% of your presentation grade) will be based on the level of feedback you provide to the other students.
+Each presenter will receive feedback from three peers plus the instructor.
+
+\section{Grading Rubric}
+
+10\% : Introduction, background, and clearly stated hypothesis \\
+10\% : Explanation of methods\\
+15\% : Organization of presentation material\\
+15\% : Use of ``tree thinking'' language\\
+20\% : Accurate interpretation of phylogenetic results\\
+30\% : Appropriate constructive feedback on other students' presentations\\
+
+
+
+\section{Final Project Paper}
+
+This paper should be at least 10 pages long and have the format and level of detail expected from a peer-reviewed journal publication. 
+It should be broken into the standard original research sections, explained below:
+
+\paragraph{Introduction}
+Introduce your project and the rationale behind the study. 
+What is your central question?
+Provide background information about your study organisms, discuss any hypotheses you are testing, and explain the data you've collected to address the questions.
+Cite all sources appropriately.
+
+\paragraph{Materials and Methods}
+Fully explain your method of data collection and analysis as if they were to be published in a peer-reviewed paper.
+Some considerations include:
+\begin{itemize}
+\item Where did your data come from? If it was published before, cite the source (paper or repository). If it was newly generated, describe how.
+\item What phylogenetic methods did you employ? 
+\item Were any parameter settings changed from the default? If so, what were they and why?
+\item What statistical methods did you use to analyze the significance of your results?
+\end{itemize}
+A person knowledgeable about phylogenetics should be able to recreate your study from this description.
+If using a command-line program, job submission script, or other computational tools, these may be submitted as supplemental information.
+
+
+\paragraph{Results and Discussion}
+
+Describe the results of your analysis both in the text and using figures and/or tables.
+Your description of the results will be evaluated using the tree-thinking terminology we learned in class.
+You should discuss all relevant results, and then address your central question.
+Does the data you collected support your initial hypotheses?
+How do your results compare to previous published analysis?
+Finally, discuss the limitations of your study, and suggest improvements or promising areas for further research.
+
+This section should include at least one figure, which should have a detailed caption and should be cited within the text.
+
+
+\paragraph{Works Cited}
+Background information and previously published research should be adequately cited.
+Plagiarism, including the failure to appropriately cite sources, will not be tolerated.
+Be sure to cite all programs used in your analysis.  
+Phylogenetics and bioinformatics software usually has a manuscript associated with it.
+Citations for R packages can usually be found using the \verb+citation()+ command.
+
+Any citation format is allowed, as long as it is consistent.
+
+
+\section{Grading Rubric}
+
+15\% : Introduction, background, and clearly stated hypothesis \\
+15\% : Explanation of methods and data sources\\
+5\% : Clarity of writing\\
+30\% : Use of ``tree thinking'' language\\
+20\% : Accurate interpretation of phylogenetic results\\
+10\% : Description of results in context of prior research\\
+5\% : Works cited and in-text citations\\
+
+
+
+\end{document}
