@@ -29,6 +29,7 @@ After completion of this graduate level course, students will be able to:
 ## Schedule
 
 
+[BIOL6304_Syllabus.md](https://github.com/mossmatters/BIOL6304/files/9420779/BIOL6304_Syllabus.md)
 | Tuesday  | Lecture Topic  | Reading  | Thursday  | Practical Topic  |
 |---|---|---|---|---|
 | 8/25  | Tree Thinking  | Tree Thinking Chapters 1 & 2  | 8/27  |  Interpreting Phylogenies  |
