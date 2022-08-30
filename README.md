@@ -1,6 +1,5 @@
 # BIOL 6304  
 # PRINCIPLES AND PRACTICE OF PHYLOGENETICS
--
 
 Fall 2022 • TuTh 3:30 - 4:50 PM 
 
@@ -12,7 +11,7 @@ Instructor: Dr. Matthew Johnson, matt.johnson@ttu.edu, 806-834-5750
 
 Office Hours by Appointment
 
--
+
 Textbook: *Tree Thinking* by Baum and Smith
 
 Website: [github.com/mossmatters/BIOL6304]()
@@ -20,7 +19,7 @@ Website: [github.com/mossmatters/BIOL6304]()
 
 Readings and Thursday exercises will be posted on Blackboard.
 
-##Expected Learning Outcomes
+## Expected Learning Outcomes
 After completion of this graduate level course, students will be able to:
 
 - Correctly use phylogenetic trees to interpret patterns of common descent and trait evolution.
