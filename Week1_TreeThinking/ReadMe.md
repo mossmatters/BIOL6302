@@ -17,7 +17,7 @@ Select the `.dmg` if you are on MacOSX. For Windows, use the `.zip`, and use the
 
 
 ### Files to download
-Download the phylogenetic tree files from the course GitHub: 
+Download the phylogenetic tree files [from the course GitHub:](https://github.com/mossmatters/BIOL6304/tree/master/Week1_TreeThinking)
 
 These phylogenetic trees show the relationships in _Artocarpus_, a genus of trees from Southeast Asia that includes several underutilized crop species such as Jackfruit and Breadfruit. The trees you will be working with were inferred from DNA sequence data from [Kates et al., 2019, American Journal of Botany. ](https://datadryad.org/stash/dataset/doi:10.5061/dryad.r8q72).
 
@@ -29,12 +29,14 @@ The tree figure that appears is a **phylogram**. The length of the branches repr
 
 The default view is also a rectangular shape for the phylogram, with the root of the tree to the left and the tips of the tree to the right. FigTree also allows two other shapes: circular and unrooted. You can choose these view options in the sidebar under Layout. This section also has controls for the Zoom and Expansion of the tree, which can be useful for viewing large phylogenies.
 
+The tree is imported as **unrooted**, because the output of the tree software used to infer the tree is unrooted trees. By convention, you can tell that a tree is unrooted because there will be a **trifurcation** at the root of the tree (three branches descending from the left-most node). View the tree in unrooted mode by clicking the button in the Layout sidebar. When looking at an unrooted tree, we cannot tell the direction of evolution, but we can still infer *bipartitions*.
+
+The _Artocarpus_ phylogeny was inferred using an **outgroup** - a species outside the group of interest (or **ingroup**). Here, the species _Streblus_glaber_ was used. Return to the rectangular view in the Layout sidebar, and then click on the branch leading to _Strebulus_glaber_EG78_. Next, click on the `Reroot` button in the top bar of FigTree. The tree will re-orient to show an outgroup and a monophyletic ingroup.
+
 In some situations, you are only interested in the topology of the phylogenetic tree, not the branch lengths. In this case, you want to view a **cladogram**. In FigTree, this can be done in the Trees section of the sidebar. Click the arrow next to Trees to expand it, and then click the checkbox next to `Transform branches` and make sure `Cladogram` is selected in the dropdown menu.
 
 FigTree allows you to select different features of the tree by clicking. You control which feature you are selecting at the top middle of the screen, with three selection modes: `Node`, `Clade`, and `Taxa`. Select the `Node` feature now, and click on one of the nodes on the phylogeny. In lecture, we discussed how changing the visualization of a phylogeny will not affect the phylogenetic relationships. Confirm this for yourself by clicking on a Node and then clicking the `Rotate` button at the top left of the screen. 
 
-
- 
 
 ### Annotating a Phylogenetic Tree
 
