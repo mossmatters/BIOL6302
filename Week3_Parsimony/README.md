@@ -147,7 +147,7 @@ PAUP has three inference modes: Parsimony, Distance, and Likelihood. The current
 
 First, let’s conduct an Exhaustive search, which we know is only feasible with up to 10 taxa. In the "Analysis" menu, select "Exhaustive Search..." A window will appear with options:
 
-[!](images/ExhaustiveSearch.png)
+![](images/ExhaustiveSearch.png)
 
 It is always a good idea to check on the default settings, but in this case we will leave them all as is. Click "Search" to begin the search. A new window will appear showing the progress of the search: how many trees it has already searched, what the current shortest (most parsimonious) tree score is, and how many trees share that best score.
 
