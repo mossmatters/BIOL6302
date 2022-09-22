@@ -44,7 +44,7 @@ We will cover likelihood in more depth in future lessons. For today, we will com
 
 To conduct the first likelihood calculation, change the "Criterion" to "Likelihood". 
 
-**COMMAND LINE USERS**: `set criterion likelihood`
+**COMMAND LINE USERS**: `set criterion=likelihood`
 
 The likelihood score is a probability that is calculated at each site in the DNA matrix. Each probability is then multiplied together, so the scores are extremely small numbers. As a result, listed in units of "negative-log-likelihood." The closer the value is to 0 (i.e. probability = 1), the better the 
 
