@@ -1,4 +1,4 @@
-# Ancestral State Reconstruction
+# Part 1: Ancestral State Reconstruction
 
 ## Learning Objectives
 After completing these excercises, students will be able to:
@@ -58,3 +58,7 @@ One tree/trait comparison to look at is tree #5 with character #1. Expand the Tr
 
 ### Exercise
 Look through the characters and trees and see if you can find a scenario where the likelihoods of the two models are substantially different. Are the character state probabilities at ancestral nodes different between the two models?
+
+# Part 2: The Comparative Method
+
+Follow the tutorial on the comparative method in the R shiny app here: https://mossmatters.shinyapps.io/Phylo_Comp_Methods_Shiny/
