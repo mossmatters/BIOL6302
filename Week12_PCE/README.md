@@ -157,7 +157,7 @@ et <- fancyTree(tree, type = "droptip", tip = getExtinct(tree), cex = 0.7)
 
 ### Download Data
 
-Download the data files from the GitHub repository.
+Download the data files from the GitHub repository. There is also a link to download a compressed (zip) version on Blackboard.
 
 ### Set Working Directory
 
