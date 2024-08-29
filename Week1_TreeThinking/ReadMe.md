@@ -72,7 +72,7 @@ NZ609|Artocarpus limpato|Prainea
 
 
 ### Questions 
-1. What species is sister to the Jackfruit, _Artocarpus heterophylla_? Hint: it could be more than one!
+1. What species is sister to the Jackfruit, _Artocarpus heterophyllus_? Hint: it could be more than one!
 1. Rotate the nodes of the phylogeny so that the two species of subgenus _Prainea_ appear next to each other on the tree.
 1. Are all of the subgenera monophyletic?
 2. Which subgenus has the least amount of molecular evolution?
