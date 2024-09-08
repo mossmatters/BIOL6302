@@ -1,5 +1,5 @@
 # Inferring Phylogenies with Parsimony
-### BIOL6304: Principles and Practice of Phylogenetics 
+### BIOL6302: Principles and Practice of Phylogenetics 
 
 In-Class Exercise
 
@@ -32,7 +32,7 @@ format datatype=standard symbols="0 1 2";
 
 
 MATRIX
-Anolis_outgroupus				0000000000000000
+Anolis_outgroupus		0000000000000000
 Anolis_acutus                   0021021121101101
 Anolis_aeneus                   0000011111102101
 Anolis_agassizi                 0000011111102101
@@ -369,6 +369,11 @@ Repeat your parsimony search. Did it change the number of equally parsimonious t
 
 ## Caminacules Phylogenetics
 
+### 0. Download Mesquite
+
+You should download the Mesquite program for phylogenetics from here: [https://www.mesquiteproject.org/Installation.html](https://www.mesquiteproject.org/Installation.html)
+
+
 ### 1. Creating a character matrix in Mesquite
 
 Now that you have some experience working with an existing NEXUS file, it is time to work on building a NEXUS file from the characters you recorded on the Caminalcules last week.
@@ -409,7 +414,7 @@ Compute a majority rule consensus tree and save this tree to a file.
 
 ### 4. Character Weighting
 
-We saw earlier that you can specify different models for the chracter evolution. You can also specify a custom scheme for weighting different character state transitions. To do this, you will need to add a new block to the NEXUS file using a text editor. For example, an assumptions blcok that specifies different weights for Transitions and Transversions in a DNA matrix could be: 
+We saw earlier that you can specify different models for the chracter evolution. You can also specify a custom scheme for weighting different character state transitions. To do this, you will need to add a new block to the NEXUS file using a text editor. For example, an assumptions block that specifies different weights for Transitions and Transversions in a DNA matrix could be: 
 
 ```
 begin assumptions;
