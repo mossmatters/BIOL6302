@@ -91,7 +91,7 @@ Download the completed alignment file in FASTA format, and open it in AliView. H
 Your gene is a sequence from a protein-encoding region of the genome. Protein coding genes are expected to evolve in a certain pattern that is different from non-coding regions. For example, we learned in lecture that the first and second position of each codon are likely to evolve much more slowly than the third codon position. We may also expect that certain types of amino acid substitutions in the protein translation are more likely than other amino acid substitutions.
 We want to take advantage of this information when we build the alignment and, later, when we infer the phylogeny.
 
-MACSE is a program that uses information about the protein translation of the nucleotide sequences to inform the alignment. The resulting alignment is in frame, that is, the first position of the alignment corresponds to the first position in the first codon, and every three bases corresponds to one codon. A Java version of [MACSE is available at this link]([https://mbb.univ-montp2.fr/MBB/subsection/softExec.php?soft=macse2](https://www.agap-ge2pop.org/macsee-pipelines/)).
+MACSE is a program that uses information about the protein translation of the nucleotide sequences to inform the alignment. The resulting alignment is in frame, that is, the first position of the alignment corresponds to the first position in the first codon, and every three bases corresponds to one codon. A Java version of [MACSE is available at this link](https://www.agap-ge2pop.org/macsee-pipelines/).
 
 ### Exercise
 
