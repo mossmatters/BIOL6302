@@ -80,7 +80,7 @@ The most important concept in the alignment process is the treatment of gap char
 [MAFFT](https://mafft.cbrc.jp/alignment/software/) is a popular program for multiple sequence alignment that has been found to be both fast and accurate with many sequences. Other progressive alignment methods include CLUSTALW and T-COFFEE.
 
 ### Exercise
-Navigate [to the MAFFT website](https://mafft.cbrc.jp/alignment/software/), and select the Online Version option in the left sidebar. In the Input section, use the option to upload one of your FASTA files. In the next section, select the option to have the characters returned in the same case as the input. The advanced settings control the search strategy, including the gap opening penalty, but for now we will leave the settings as default.
+Navigate [to the MAFFT website](https://mafft.cbrc.jp/alignment/software/), and select the Online Version option in the left sidebar. In the Input section, use the option to upload one of your FASTA files. In the next section, select the option to have the characters returned in the same case as the input, and for the sample names to be 100 characters long. The advanced settings control the search strategy, including the gap opening penalty, but for now we will leave the settings as default.
 
 You may enter your e-mail address, but with the number of sequences we’re using, the alignment should only take a few seconds. Click submit and wait for your results.
 
