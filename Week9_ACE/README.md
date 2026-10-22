@@ -19,7 +19,7 @@ The `bembidion.nex` file has Character states and trees for all taxa. Load the f
 
 With one of the trees showing, right click on the tab for the tree viewer and select "Pop out as separate window." There will now be a separate set of menu options just above the tree, including **Analysis:Tree**.
 
-In the **Analysis:Tree** menu, select "Trace Character History," and click OK. In the next window, select  "Parsimony Ancestral States".
+In the **Analysis:Tree** menu, select "Trace Character On All Trees," and click OK. In the next window, select  "Parsimony Ancestral States". Another dialog will ask whether to use saved trees (yes) and stored trees (yes).
 
 The tree window will now display the character states for the first character mapped on to the current tree. There will be two sets of arrows, controlling either which tree is displayed, or which character is mapped. Use the arrows to navigate between trees and characters. If there is no definite answer for the ancestral state at a node, it will be listed as "equivocal."
 
@@ -43,7 +43,7 @@ Likelihood ancestral state reconstruction also provides an probability estimate 
 
 ### Setting the likelihood model
 
-In Mesquite, return to the tree window. In the Display menu, select Tree Form, and then "Balls and Sticks". This view will be more useful for showing the probabilities of character states at ancestral nodes.
+In Mesquite, return to the tree window. In the Form menu, select Tree Form, and then "Balls and Sticks". This view will be more useful for showing the probabilities of character states at ancestral nodes.
 
 Repeat the process of tracing character states on the tree:
 
